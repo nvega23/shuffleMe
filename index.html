@@ -1,48 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Random People Boxes</title>
+  <title>Shuffle Me</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./images/tooth.png" type="image/x-icon">
+  <script src="script.js"></script>
 </head>
 <body>
   <div class="App">
-    <h1>Good morning!</h1>
-    <button onclick="assignRandomly()">Shuffle me</button>
-    <div class="box">
-      <h2>Dr.Cave</h2>
-      <ul id="box1"></ul>
+      <div class="container">
+        <h1>Good morning!</h1>
+        <div class="box">
+            <h2>Dr.Cave</h2>
+            <ul id="box1"></ul>
+        </div>
+        <div class="box">
+            <h2>Dr.Shahzad</h2>
+            <ul id="box2"></ul>
+        </div>
+        <button class="shuffleButton" onclick="assignRandomly()">Shuffle me</button>
     </div>
-    <div class="box">
-      <h2>Dr.Shahzad</h2>
-      <ul id="box2"></ul>
-    </div>
-  </div>
-  
-  <script>
-    const people = [
-      'Cynthia <3', 'Ana', 'Paty', 'Brenda'
-    ];
-
-    const assignRandomly = () => {
-      const shuffledPeople = [...people].sort(() => Math.random() - 0.5);
-      const halfLength = Math.ceil(shuffledPeople.length / 2);
-      const box1People = shuffledPeople.slice(0, halfLength);
-      const box2People = shuffledPeople.slice(halfLength);
-      
-      displayPeople(box1People, 'box1');
-      displayPeople(box2People, 'box2');
-    };
-
-    const displayPeople = (peopleList, containerId) => {
-      const container = document.getElementById(containerId);
-      container.innerHTML = '';
-      
-      peopleList.forEach((person) => {
-        const listItem = document.createElement('li');
-        listItem.textContent = person;
-        container.appendChild(listItem);
-      });
-    };
-  </script>
+</div>
 </body>
 </html>
