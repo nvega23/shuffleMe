@@ -1,0 +1,23 @@
+.App {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .box {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  .box ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .box li {
+    margin: 5px 0;
+  }
+  

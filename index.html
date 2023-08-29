@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random People Boxes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="App">
+    <h1>Good morning!</h1>
+    <button onclick="assignRandomly()">Shuffle me</button>
+    <div class="box">
+      <h2>Dr.Cave</h2>
+      <ul id="box1"></ul>
+    </div>
+    <div class="box">
+      <h2>Dr.Shahzad</h2>
+      <ul id="box2"></ul>
+    </div>
+  </div>
+  
+  <script>
+    const people = [
+      'Cynthia <3', 'Ana', 'Patty', 'Bertha', 'Person 5', 'Person 6'
+    ];
+
+    const assignRandomly = () => {
+      const shuffledPeople = [...people].sort(() => Math.random() - 0.5);
+      const halfLength = Math.ceil(shuffledPeople.length / 2);
+      const box1People = shuffledPeople.slice(0, halfLength);
+      const box2People = shuffledPeople.slice(halfLength);
+      
+      displayPeople(box1People, 'box1');
+      displayPeople(box2People, 'box2');
+    };
+
+    const displayPeople = (peopleList, containerId) => {
+      const container = document.getElementById(containerId);
+      container.innerHTML = '';
+      
+      peopleList.forEach((person) => {
+        const listItem = document.createElement('li');
+        listItem.textContent = person;
+        container.appendChild(listItem);
+      });
+    };
+  </script>
+</body>
+</html>
