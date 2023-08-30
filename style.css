@@ -86,9 +86,7 @@ body{
 
 @media only screen and (max-width: 1200px) {
     .App {
-        background-image: url(
-            https://ci3.googleusercontent.com/mail-img-att/AIFldNr-V0Erk8W37DDhxEaIz0XzW7icOzUo5P3br6dAh5pDbwvLbQq6EQ7fuk_1oumu8bJXYE_QcrCJWAM1SoPVmC4UGyQyWWOH7UmJUe0mkpRSW7FBj8MVHLULzr6LlyZgY22lwb3r_hIiCkvV26KACvaMCUJC-J5oYmeDg516I49hXdmpGBv2rSs5OIDJl0hT6a5wM3wxprjrBldER0vcZI-02IioIwsGLfXoc3txjPSboH6nSGkRJ90DGwvJY2225PhAq5i810q6fHA0VRwbHex6t4zOouuNvaFY0uIscP9E4cQVXNhYEL50HmPEVZeM3TGH5uUduq4iK_sbbR-CplL9vkxeDWczn6nF3RemZmFM0mxACUvuzXoc6HMXv7t29jjEKlGksuSIXl0KTqTEes0WO6nrtV4q8HRoHJ2e5x5_3sdqX5Pvtndm32FeTvX6Co75EDEiTFfekxHBp3GCVjQyjbr0G1uGY_fneamyiSJaFPoSDQlR_WACMTkE1HpqoshxVMZlAGYZQQNjGwD_jiGh-WTViJHQGLWeqdolx26epagTNCkWMkielWCem_9Zd9a1AWJ7pgE2UCwYd09QUxt3tBZiFfP0lKR_6WkWpL2A3IaIctmREhUGlAW4rFGAahUqrCmJb9B7Vfm2f8Zjg-mvYVvKY8SQM0LnZnnxpK2dzVev7aRTGm5n0FhB0kpoUtAidd4rCmdRyZ1FKmzsE85MBdXk210JZe68OKdjEEUqzyQq1aFoQcYds605R-hFzZaHmFRt0QFnWq3ydPx3TgabCRlWVXRV9WlY0rZkr9c_pmzv39PC9R-QVuXRx9ntOU2Y94trNvdghz5CXfUAfTrO4265PN-0iIdv8OPw3KNvtFfQrw8Ik0rMN5g4MPBK7kukeMvkiXDk471jQOntz2Kaym2nNRmNC-zD919V1gQytiBLkeNJ-ulpWZzerwaBkQYc4lWj_YyEm-U3xsrgTgcUJH-u4MRVZFjQwPDGnJSpKPV7Fizo-ua2zjt1Ho4linWHiQHE41ruMK51ivY=s0-l75-ft
-        );
+        background-image: url(./images/blueBackground.jpeg);
     }
     .shuffleButton{
         cursor: pointer;
