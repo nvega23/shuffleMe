@@ -85,13 +85,14 @@ body{
     }
     .box li{
         font-size: 2vh;
+        font-weight: 600;
     }
 }
 
 @media only screen and (max-width: 1200px) {
     .App {
         background-image: url(
-            './images/bluesun.jpeg'
+            './images/blueBackground.png'
         );
     }
     .shuffleButton{
