@@ -98,9 +98,10 @@ body{
     .shuffleButton{
         cursor: pointer;
         padding: 12px 30px;
-        background-color: yellow;
-        border: 0.5vh solid white;
-        color: black;
+        /* background-color: yellow; */
+        background-color: cadetblue;
+        border: 1vh solid black;
+        color: white;
         border-radius: 10vh;
         width: 20vh;
         height: 6vh;
@@ -114,7 +115,8 @@ body{
     }
     .container h1{
         z-index: 1;
-        background-color: midnightblue;
+        /* background-color: midnightblue; */
+        background-color: cadetblue;
         color: white;
         width: 20vh;
         height: 10vh;
