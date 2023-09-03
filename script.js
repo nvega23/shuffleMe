@@ -22,3 +22,4 @@ const displayPeople = (peopleList, containerId) => {
         container.appendChild(listItem)
     })
 }
+
