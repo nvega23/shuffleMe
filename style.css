@@ -8,18 +8,19 @@ body{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     background-image: url(
-        https://images.unsplash.com/photo-1564420228450-d9a5bc8d6565?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2913&q=80
+        ./images/bluesun.jpeg
         );
     background-size: cover;
 }
 
 .box {
+    height: 25vh;
+    width: 45vh;
     display: inline-block;
     margin: 20px;
     padding: 20px;
     border: 2px solid #333;
     border-radius: 5px;
-    width: 200px;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     border-radius: 1vh;
@@ -74,11 +75,12 @@ body{
 
 @media screen {
     .container h1{
-        font-size: 2vh;
+        font-size: 5vh;
+        width: auto;
     }
     .box{
-        height: 15vh;
-        width: 15vh;
+        height: 25vh;
+        width: 45vh;
     }
     .box h2{
         font-size: 2vh;
@@ -86,6 +88,17 @@ body{
     .box li{
         font-size: 2vh;
         font-weight: 600;
+    }
+    .shuffleButton{
+        background-color: yellow;
+        color: black;
+        font-weight: 600;
+    }
+    .shuffleButton:hover{
+        background-color: cadetblue;
+        color: white;
+        font-weight: 600;
+        /* animation: pulse 0.5s ease-in; */
     }
 }
 
@@ -175,5 +188,17 @@ body{
     to {
         transform: translateX(0); /* End position, on-screen */
         opacity: 100%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
     }
 }
